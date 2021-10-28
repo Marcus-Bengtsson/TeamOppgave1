@@ -19,6 +19,7 @@ function swapElements(element1, element2) {
 }
 
 function randomize() {
+		swapElements(rute1, rute2);
     swapElements(rute1, rute2);
     swapElements(rute4, rute6);
     swapElements(rute3, rute7);
