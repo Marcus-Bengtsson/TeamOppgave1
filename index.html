@@ -7,24 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sliding puzzle</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="slidingPuzzle.js">
 </head>
 
 <body>
     <div id="rutenett">
-        <div id="rute1" class="rute"><img src="img/Smiley1.png"></div>
-        <div id="rute2" class="rute"><img src="img/Smiley2.png"></div>
-        <div id="rute3" class="rute"><img src="img/Smiley3.png"></div>
-        <div id="rute4" class="rute"><img src="img/Smiley4.png"></div>
-        <div id="rute5" class="rute"><img src="img/Smiley5.png"></div>
-        <div id="rute6" class="rute"><img src="img/Smiley6.png"></div>
-        <div id="rute7" class="rute"><img src="img/Smiley7.png"></div>
-        <div id="rute8" class="rute"><img src="img/Smiley8.png"></div>
-        <div id="rute9" class="rute"><img src="img/Smiley9.png"></div>
+        <div id="rute1" class="rute" onclick="clicked(this, 'rute2', 'rute4')"><img src="img/Smiley1.png" alt="1"></div>
+        <div id="rute2" class="rute" onclick="clicked(this, 'rute1', 'rute3', 'rute5')"><img src="img/Smiley2.png" alt="2"></div>
+        <div id="rute3" class="rute" onclick="clicked(this, 'rute2', 'rute6')"><img src="img/Smiley3.png" alt="3"></div>
+        <div id="rute4" class="rute" onclick="clicked(this, 'rute1', 'rute5', 'rute7')"><img src="img/Smiley4.png" alt="4"></div>
+        <div id="rute5" class="rute" onclick="clicked(this, 'rute2', 'rute4', 'rute6', 'rute8')"><img src="img/Smiley5.png" alt="5"></div>
+        <div id="rute6" class="rute" onclick="clicked(this, 'rute3', 'rute5', 'rute9')"><img src="img/Smiley6.png"  alt="6"></div>
+        <div id="rute7" class="rute" onclick="clicked(this, 'rute4', 'rute8')"><img src="img/Smiley7.png" alt="7"></div>
+        <div id="rute8" class="rute" onclick="clicked(this, 'rute5', 'rute7', 'rute9')"><img src="img/Smiley8.png" alt="8"></div>
+        <div id="rute9" class="rute" onclick="clicked(this, 'rute6', 'rute8')"><img src="img/Smiley9.png" alt="9"></div>
     </div>
 
 
-
+    <script src="slidingPuzzle.js"></script>
 </body>
 
 </html>
