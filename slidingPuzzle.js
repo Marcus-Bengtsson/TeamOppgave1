@@ -52,14 +52,25 @@ function clicked(element, alt1, alt2, alt3, alt4) {
     else if (document.getElementById(alt4).innerHTML == '') {
         swapElements(element, document.getElementById(alt4));
     }
-    if (document.getElementById('rute1').innerHTML == '<img src="img/Smiley1.png" alt="1">' &&
-        document.getElementById('rute2').innerHTML == '<img src="img/Smiley2.png" alt="2">' &&
-        document.getElementById('rute3').innerHTML == '<img src="img/Smiley3.png" alt="3">' &&
-        document.getElementById('rute4').innerHTML == '<img src="img/Smiley4.png" alt="4">' &&
-        document.getElementById('rute5').innerHTML == '<img src="img/Smiley5.png" alt="5">' &&
-        document.getElementById('rute6').innerHTML == '<img src="img/Smiley6.png" alt="6">' &&
-        document.getElementById('rute7').innerHTML == '<img src="img/Smiley7.png" alt="7">' &&
-        document.getElementById('rute8').innerHTML == '<img src="img/Smiley8.png" alt="8">') {
-        document.getElementById('rute9').innerHTML = '<img src="img/Smiley9.png" alt="9">';
+    if (rute1.innerHTML == '<img src="img/Smiley1.png" alt="1">' &&
+        rute2.innerHTML == '<img src="img/Smiley2.png" alt="2">' &&
+        rute3.innerHTML == '<img src="img/Smiley3.png" alt="3">' &&
+        rute4.innerHTML == '<img src="img/Smiley4.png" alt="4">' &&
+        rute5.innerHTML == '<img src="img/Smiley5.png" alt="5">' &&
+        rute6.innerHTML == '<img src="img/Smiley6.png" alt="6">' &&
+        rute7.innerHTML == '<img src="img/Smiley7.png" alt="7">' &&
+        rute8.innerHTML == '<img src="img/Smiley8.png" alt="8">')
+        {
+        rute9.innerHTML = '<img src="img/Smiley9.png" alt="9">';
+        rute1.style.outline = "none";
+        rute2.style.outline = "none";
+        rute3.style.outline = "none";
+        rute4.style.outline = "none";
+        rute5.style.outline = "none";
+        rute6.style.outline = "none";
+        rute7.style.outline = "none";
+        rute8.style.outline = "none";
+        rute9.style.outline = "none";
+
     }
 }
